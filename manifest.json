@@ -24,6 +24,11 @@
   },
   "default_title": "Play",
   "default_popup": "popup/info.html"
-}
+},
+  "permissions": [
+    "storage"
+  ]
+
+
 
 }
