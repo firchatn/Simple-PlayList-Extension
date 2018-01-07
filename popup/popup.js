@@ -1,5 +1,4 @@
 var url = localStorage.getItem('music');
-alert(url);
 function youtube_parser(url){
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
     var match = url.match(regExp);
@@ -7,4 +6,5 @@ function youtube_parser(url){
 }
 
 var id = youtube_parser(url);
-document.getElementById("player").src = "https://www.youtube.com/embed/" + id + "?autoplay=1" ; 
+document.getElementById("player").src = "https://www.youtube.com/embed/" + id + "?autoplay=1" ;
+ 
