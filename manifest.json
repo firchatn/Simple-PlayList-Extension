@@ -8,7 +8,7 @@
   "description": "Play List player from youtube",
 
   "icons": {
-    "48": "icons/pass.png"
+    "48": "icons/icon.png"
   },
 
   "content_scripts": [
