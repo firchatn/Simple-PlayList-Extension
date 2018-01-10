@@ -5,10 +5,17 @@ function youtube_parser(url){
     var match = url.match(regExp);
     return (match&&match[7].length==11)? match[7] : false;
 }
-
 var id = youtube_parser(url);
-//document.getElementById("player").src = "https://www.youtube.com/embed/" + id + "?autoplay=1" ;
  
+
+function lists(){
+var inputVal = document.createElement('input');
+inputVal.class="w3-button w3-block w3-teal" ;
+inputVal.type="button" ;
+inputVal.value = "title"
+document.p.appendChild(inputVal);
+}
+
 
 function run(){
 document.getElementById("but") 
