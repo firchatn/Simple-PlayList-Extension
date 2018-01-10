@@ -8,17 +8,33 @@ function youtube_parser(url){
 var id = youtube_parser(url);
  
 
+function creation(id){
+var item = document.createElement('a');
+var n = document.createElement('br');
+var c = 'w3-button';
+item.classList.add(c);
+item.href = url  ;
+item.id = id  ;
+item.target = "_blank" ;
+item.innerHTML = "name" ;
+document.body.appendChild(item);
+document.body.appendChild(n);
+}
+
 function lists(){
-var inputVal = document.createElement('input');
-inputVal.class="w3-button w3-block w3-teal" ;
-inputVal.type="button" ;
-inputVal.value = "title"
-document.p.appendChild(inputVal);
+var i = 0 ;
+while(i<10){
+creation('but');
+i++;
 }
 
 
+}
+lists();
+
+/*
 function run(){
-document.getElementById("but") 
+var link = document.getElementById("but") 
 var iframe = document.createElement('iframe');
 iframe.width="300" ;
 iframe.height="290" ;
@@ -26,3 +42,4 @@ iframe.src = "https://www.youtube.com/embed/" + id + "?autoplay=1" ;
 document.body.appendChild(iframe);
 document.getElementById("but").type = "hidden";
 }
+*/
