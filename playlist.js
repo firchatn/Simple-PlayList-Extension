@@ -1,13 +1,16 @@
 alert('oki');
+
 var url = document.URL ;
-var title = document.title;
+
+var id = document.title;
+
 
 if (localStorage.getItem('playlist') === null){
-	var lists = {title : url };
-	localStorage.setItem('playlist',JSON.stringify(lists););
+	var lists = {id : url };
+	localStorage.setItem('playlist',JSON.stringify(lists));
 }
 
-
+alert("okis");
 
 
 
