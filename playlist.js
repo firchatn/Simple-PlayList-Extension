@@ -4,7 +4,7 @@ var title = document.title;
 
 if (localStorage.getItem('playlist') === null){
 	var lists = {title : url };
-	localStorage.setItem('playlist',lists);
+	localStorage.setItem('playlist',JSON.stringify(lists););
 }
 
 

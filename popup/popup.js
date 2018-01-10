@@ -1,4 +1,5 @@
-//var url = localStorage.getItem('music');
+//var lists = localStorage.getItem('playlist');
+//lists = JSON.parse(lists);
 var url = "https://www.youtube.com/watch?v=3yyDul6FBDM&t=144s";
 function youtube_parser(url){
     var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
@@ -21,7 +22,15 @@ document.body.appendChild(item);
 document.body.appendChild(n);
 }
 
-function lists(){
+function listsVues(){
+	/*
+	for (var key in lists) {
+    if (lists.hasOwnProperty(key)) {
+        creation(lists[key]);
+    }
+}
+*/
+
 var i = 0 ;
 while(i<10){
 creation('but');
@@ -30,7 +39,7 @@ i++;
 
 
 }
-lists();
+listsVues();
 
 /*
 function run(){
